@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6ebeb
+}
+
+nav {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #01090e8a;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;  
+    justify-content: center;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: rgb(244, 244, 244);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d34a0b;
+}
+
+#home {
+    background-color: #4a90e2;
+    background-image: url(	https://i.pinimg.com/736x/b1/7a/f0/b17af041b4e811d4fb9ce58d01ba4893.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 254, 253);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    background-color: #c4480a;
+    border-radius: 15px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 20px;
+    margin-top: 5px;
+    border: 1px solid #f27210;
+    border-radius: 25px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #c4480a;
+    color: rgb(241, 244, 242);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: #7c450f;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+    /* background-image: url(https://i.pinimg.com/originals/a2/4c/b5/a24cb568fa40046f8562dbc45cea8506.gif); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h2 {
+    color: #c4480a;
+    justify-content: center;
+    display: flex;
+}
+
+
+.curso {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+
+select{
+    font-size: 3em;
+    border: 10px;
+    border-radius: 15px;
+    background-color: #c4480a;
+    color: white;
+    padding: 2px;   
+    box-shadow: 0px 0px 10px black;
+    width: 25%;
+    display: block;
+    margin-right: 50%;
+    margin-left: 37%;
+}
+
+select:hover {
+    background-color: #f25309;
+}
+
+@media (max-width: 480px) {
+    .column{flex: 1 1 100%;}
+
+    header{
+        justify-content: center;
+        display: flex;
+    }
+    select{
+        display: flex;
+        justify-content: center;
+        padding: 1px;
+        size: 3px;
+        font-size: 30px;
+    }
+}
